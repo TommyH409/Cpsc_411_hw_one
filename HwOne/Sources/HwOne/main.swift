@@ -3,7 +3,7 @@ import Cocoa
 
 let router = Router()
 
-//let dbObj = Database.getInstance()
+let dbObj = Database.getInstance()
 
 // this code will get data in the body of POST method
 router.all("/ClaimService/add", middleware: BodyParser())

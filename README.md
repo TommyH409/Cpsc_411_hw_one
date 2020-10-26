@@ -1,3 +1,3 @@
-# Cpsc_411_hw_one
+# HwOne
 
-Tommy Huynh: tommyh@csu.fullerton.edu
+A description of this package.

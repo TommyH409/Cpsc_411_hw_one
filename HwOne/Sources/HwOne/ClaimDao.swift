@@ -42,7 +42,7 @@ class ClaimDao {
     func getAll() -> [Claim] {
         var cList = [Claim]()
         var resultSet : OpaquePointer?   // result set of variable return back from sqlite3
-        let sqlStr = "id, title, date, isSolved"
+        let sqlStr = "SELECT id, title, date, isSolved FROM claim"
         let conn = Database.getInstance().getDBconnection()
         
         if sqlite3_prepare_v2(conn, sqlStr, -1, &resultSet, nil) == SQLITE_OK {
